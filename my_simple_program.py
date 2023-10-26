@@ -24,7 +24,7 @@ while True:
     print("3. Perkalian")
     print("4. Pembagian")
     print("5. Keluar")
-
+    
     # Meminta input dari pengguna
     pilihan = input("Masukkan nomor operasi (1/2/3/4/5): ")
 
@@ -48,3 +48,5 @@ while True:
         print("Hasil perkalian:", kali(num1, num2))
     elif pilihan == '4':
         print("Hasil pembagian:", bagi(num1, num2))
+
+
