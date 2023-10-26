@@ -22,6 +22,9 @@ print(f"Jumlah karakter menggunakan len() yaitu {len(karakter)}")
 
 print("\n") # Hiraukan ini jika anda melihat di code editor
 
+# Cara menghitung index string pada python yaitu, setiap karakter dibungkus oleh sebuah pembatas kiri kanan, pembatas kiri di awal karakter itu index 0, sedangkan pembatas setelah karakter itu index 1. Jika hanya satu karakter.
 
+print(karakter[0:]) # mengambil hurup pertama sampai akhir
+print(karakter[:4]) # mengambil karakter sampai index ke 4
 
 
