@@ -1,8 +1,20 @@
 """Memamhami List lebih dalam"""
 
-no_urut = [0, 1, 2, 3]  # Ini adalah list
+# List dapat diindex dan diiris
+fruit = ["mangga", "apel", "stroberi"]
 
-# Cara mengakses list
+print(len(fruit))  # len() return field items in list
 
-print(no_urut[2])
-# irisan dalam LIST berbeda dengan irisan STRING
+print(fruit[0])  # [index-n] return item from index-n
+
+print(fruit[:1])  # slicing item from first item to index-1 as lastend
+
+# List dapat memiliki operasi gabungan
+sayuran = ["bayam", "wortel", "tomat"]
+
+print(fruit + sayuran)
+
+# List dapat diubah isi nya
+
+sayuran[1] = "pakcoy"
+print(sayuran)
