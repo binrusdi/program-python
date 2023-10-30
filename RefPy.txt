@@ -1,0 +1,18 @@
+Operator
++ -  * ** / //  % @
+<< >> & | ^ a ~ :=
+< > <= >= == !=
+
+Pembatas
+( ) [ ] { }
+, : . ; @ = ->
++= -= *= /= //= %= @=
+&= |= ^= >>= <<= **=
+
+Model Data
+- operator is membandingkan dua object
+- fungsi id() mengembalikan bilangan bulat yang mewakili identitasnya.
+-> Detail implementasi cpython: untuk cpython id(x) adalah alamat memori tempat
+x disimpan
+-> tipe suatu object menentukan operasi yang didukung oleh object tsb. type()
+mengembalikan type object itu sendiri.

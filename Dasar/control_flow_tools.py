@@ -1,4 +1,4 @@
-# While
+""" While """
 a, b = 0, 1
 while a < 10:
     print(a)
@@ -20,8 +20,7 @@ while a < 1000:
     a, b = b, a + b
 
 
-
-# Pernyataan IF
+""" Pernyataan IF """
 print("\n")
 """
 nilai = int(input("Please input nilai dengan integer/angka : "))
@@ -46,9 +45,9 @@ for hewan in hewans:
 
 # Mengulang salinan koleksi sambil mengubahnya
 users = {
-    "hans" : "active",
-    "jhons" : "inactive",
-    "melly" : "active"
+    "hans": "active",
+    "jhons": "inactive",
+    "melly": "active"
 }
 # mengulangi salinan
 for user, status in users.copy().items():
@@ -69,8 +68,8 @@ print(active_users)
 for i in range(5):
     print(i)
 
-range(5, 10) # jangan digunakan
-r = range(5, 10) # jangan digunakan
+range(5, 10)  # jangan digunakan
+r = range(5, 10)  # jangan digunakan
 
 # Membuat list dengan range
 lr = list(range(2, 10))
@@ -79,3 +78,15 @@ print(lr)
 # Dengan menambahkan aturan kenaikan
 ll = list(range(3, 15, 5))
 print(ll)
+
+
+# Break dan Continue
+# Pernyataan break keluar dari for loop dan while loop terdalam
+for n in range(2, 10):
+    for x in range(2, n):
+        if n % x == 0:
+            print(n, 'equals', x, '*', n//x)
+            break
+    else:
+        # loop fell through without finding a factor
+        print(n, 'is a prime number')
