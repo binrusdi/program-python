@@ -28,3 +28,22 @@ x = bytearray(5) # bytearray
 x =  memoryview(bytes(5)) # memoryview
 x = None # NoneType
 '''
+
+''' Mengatur type data tertentu '''
+''' Menggunakan fungsi konstruktor '''
+'''
+x = str() # str
+x = int() # int
+x = float() # float
+x = complex() # complex
+x = list(()) # list
+x = tuple(()) # tuple
+x = range() # range
+x = dict(key = value, key = value) # dict
+x = set(()) # set
+x = frozenset(()) # frozenset
+x = bool() # bool
+x = bytes() # bytes
+x = bytearray() # bytearray
+x = memoryview(bytes()) # memoryview
+'''
