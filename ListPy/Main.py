@@ -31,3 +31,57 @@ print(text)
 
 text.clear() # item list menjadi kosong
 print(text)
+
+# Iterasi list dengan for
+zoo = ['domba', 'sapi', 'keledai']
+for hewan in zoo:
+  print(hewan)
+  
+# Iterasi for dengan index
+for i in range(len(zoo)):
+  print(zoo[i])
+  
+# Iterasi list sementara dengan while
+
+i = 0
+while i < len(zoo):
+  print(zoo[i])
+  i = i + 1
+  
+# iterasi paling sederhana
+warna = ['merah', 'kuning', 'hijau']
+[print(x, end='..') for x in warna]
+
+''' Mengurutkan daftar'''
+# Menaik
+pelabuhan = ['tanjung priok', 'tanjung perak']
+pelabuhan.sort()
+print(pelabuhan)
+
+# Menurun
+pelabuhan.sort(reverse=True)
+print(pelabuhan)
+
+# Menyalin list
+list1 = ['krupuk', 'seblak', 'pedas']
+list2 = list1.copy()
+print(list2)
+
+# Menggabungkan list
+# cara ke - 1
+makanan = ['bakso', 'soto', 'mie ayam']
+level = [1, 2, 3]
+launch = makanan + level
+print(launch)
+
+#  Cara ke - 2
+admin = ['adam', 'azizah', 'viet']
+opr = ['angga', 'asep', 'adel']
+for name in admin:
+  opr.append(name)
+print(opr)
+
+# Cara ke - 3
+genap = [2, 4, 6]
+ganjil = [1, 3, 7]
+genap.extend(ganjil)
