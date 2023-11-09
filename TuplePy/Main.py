@@ -40,3 +40,7 @@ print(toyota, type(toyota))
 print(honda, type(honda))
 
 # Loop tuple sama dengan kumpulan data yg lain seperti list
+# Menggandakan tuple
+smartphone = ('Nokia', 'Samsung', 'Sony')
+double_tuple = smartphone * 2
+print(double_tuple)
