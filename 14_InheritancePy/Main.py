@@ -42,7 +42,7 @@ judul.printbook()
 
 class Judul(Book):
   def __init__(self, namebook, pagesbook, year):
-    super().__init__(namebook, pagesbook)
+    super().__init__(namebook, pagesbook) # nama class Book, diganti dengan "super"
     self.graduation = year
 
   def printtahun(self):
