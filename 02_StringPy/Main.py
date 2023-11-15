@@ -1,24 +1,70 @@
-''' String Python '''
-# Format String
-umur = 28
-nama = 'Rusdiana'
-text = 'Hi, perkenalkan nama saya \"{1}\", berumur {0} tahun'
-print(text.format(umur, nama))
+# String Python
+# => gunakan fungsi print(). untuk mencetak isi variable
+# Menetapkan string ke variable
+string_kutip_satu = 'Ini adalah string' # ini adalah string
+string_kutip_dua = "Ini juga adalah string dengan kutip dua" # Ini juga adalah string dengan kutip dua
+string_multi_baris = '''Ini adalah string multi baris,
+yang mana jika di enter tidak akan error.
+dan penampakan nya dalam console,
+akan sesuai dengan apa yang di tulis di code. dan multi baris ini menggunakan kutip 3'''
 
-# Mengiris String
-print(nama[3:]) # dari index 3 sampai akhir
-print(nama[:5]) # dari awal sampai index 5 (exclude 5)
+# String adalah Array
+'''
+String pada python adalah array byte yang mewakili karakter unicode, namun python tidak mempunyai tipe data karakter.
+Karakter tunggal hanyalah sebuah string dengan panjang 1.
+Tanda kurung siku dapat digunakan untuk mengakses element string.
+'''
+a = "Hello"
+print(a[0]) # H
 
-''' Method String '''
-# Semua method string mengembalikan nilai baru
-a = 'rusdiana'
-b = 'Rusdiana'
+# Perulangan melalui sttring
+b = "Banana"
+for char in b:
+    print(char) # B a n a n a (vertikal)
 
-c = 'saya suka apel, karena apel mengandung vitamin'
-print(a.capitalize()) # Huruf kapital diawal string
-print(b.casefold()) # Return lower casefol
-print(b.center(len(b), 'o')) # return center char
-if c:
-  panjang_c = len(c)
-print(c.count('apel', 0, panjang_c)) # Berapa kali sebuah string muncul
-print(c.encode())
+# Panjang string
+c = "Hello, world"
+print(len(c)) # 12
+
+# Periksa string menggunakan in
+# => Mengembalikan boolean
+d = "Hello, world"
+print("world" in d) # True
+
+# Periksa string menggunakan if
+e = "Mobil itu bermerk yaris"
+if "yaris" in e:
+    print("Ya, mereknya adalah 'yaris'") # Ini akan dicetak
+
+# Periksa string dengan not in
+f = "Iron man adalah pahlawan marvel?"
+print("Iron man" not in f) # False
+
+# Mengembalikan serangkaian karakter dengan mengiris
+# => tentukan index awal dan akhir, pisahkan dengan titik dua
+g = "World"
+print(g[0:]) # World
+print(g[0:3]) # Wor
+print(g[:len(g)]) # World
+
+# Escape Character
+'''
+Untuk menyisipkan karakter ilegal dalam sebuah string, gunakan escape karakter.
+Karakter escape adalah garis miring terbalik \ yang diikuti dengan karakter yg ingin disisipkan.
+'''
+# \'
+txt_1 = 'It\'s alright'
+print(txt_1) # It's alright
+
+# \\
+txt_2 = "This will insert one \\ (backslash)."
+print(txt_2) # This will insert one \ (backslash).
+
+# \n
+txt_3 = "Hello\nWorld"
+print(txt_3) # Hello
+             # World
+
+# \r
+txt_4 = "Hi\rrusdi"
+print(txt_4)
